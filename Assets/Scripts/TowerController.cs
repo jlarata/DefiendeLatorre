@@ -5,8 +5,14 @@ using UnityEngine;
 public class TowerController : MonoBehaviour
 {
     public GameObject[] projectilesList;
-    // Start is called before the first frame update
-    void Start()
+    public GameObject[] targets;
+    public GameObject myTarget;
+    public float maxDistance = 100f;
+    public float targetDistance;
+
+    
+
+        void Start()
     {
             StartCoroutine(Fire());
 
@@ -21,10 +27,32 @@ public class TowerController : MonoBehaviour
     {
             
             yield return new WaitForSeconds(3f);
+            SetTarget();
+            yield return new WaitForSeconds(.5f);
             SpawnProjectile();
 
         StartCoroutine(Fire());
     }
+
+    public void SetTarget()
+        {
+                targets = GameObject.FindGameObjectsWithTag ("Malos");
+                
+                for (int i = 0; i< targets.Length; i++)
+                {
+                        // iteration: for each enemy calculate distance to tower
+                        targetDistance = Vector3.Distance(targets[i].transform.position, transform.position);
+                        // then if that distance is less than "maxdistance" (it should say mindistance)
+                        if (targetDistance < maxDistance)
+                        {
+                                //resets the maxdistance (so to check other objects)
+                        maxDistance = targetDistance;
+                        //and sets the current target
+                        myTarget = targets[i];
+                
+                        }
+                        }
+        }
 
 
     void SpawnProjectile()
