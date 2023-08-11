@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7197957083039379074
+--- !u!1 &4558299632939230933
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,48 +8,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4871801114173924753}
-  - component: {fileID: 7758398088949046205}
-  - component: {fileID: 7364933751408754051}
-  - component: {fileID: 9148320931125992570}
-  - component: {fileID: -4687834475708170227}
+  - component: {fileID: 6142834070776995814}
+  - component: {fileID: 2526831498537162021}
+  - component: {fileID: 2115670886196123732}
+  - component: {fileID: 1927305726022807127}
+  - component: {fileID: -3208129468869822222}
   m_Layer: 0
-  m_Name: Malo
-  m_TagString: Malos
+  m_Name: GMort
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4871801114173924753
+--- !u!4 &6142834070776995814
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7197957083039379074}
+  m_GameObject: {fileID: 4558299632939230933}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: -4}
-  m_LocalScale: {x: 0.6, y: 0.2, z: 0.6}
+  m_LocalPosition: {x: 3.8, y: 1, z: 1.13}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!33 &7758398088949046205
+--- !u!33 &2526831498537162021
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7197957083039379074}
+  m_GameObject: {fileID: 4558299632939230933}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &7364933751408754051
+--- !u!23 &2115670886196123732
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7197957083039379074}
+  m_GameObject: {fileID: 4558299632939230933}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ef9be1166afc64189b17c7016c4e5002, type: 2}
+  - {fileID: 2100000, guid: 2f584961109e783f3b66b8af20952a86, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -85,13 +85,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &9148320931125992570
+--- !u!136 &1927305726022807127
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7197957083039379074}
+  m_GameObject: {fileID: 4558299632939230933}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -108,28 +108,17 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &-4687834475708170227
+--- !u!114 &-3208129468869822222
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7197957083039379074}
+  m_GameObject: {fileID: 4558299632939230933}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b40151cf94ad1940a4e8d9782be20fa, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f5a02894416fef82bb99de4c7f2ea82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  posta01: {fileID: 0}
-  posta02: {fileID: 0}
-  posta03: {fileID: 0}
-  posta04: {fileID: 0}
-  posta05: {fileID: 0}
-  posta06: {fileID: 0}
-  posta07: {fileID: 0}
-  posta08: {fileID: 0}
-  posta09: {fileID: 0}
-  posta10: {fileID: 0}
-  posta11: {fileID: 0}
-  posta12: {fileID: 0}
-  currentTramo: 0
+  projectilesList:
+  - {fileID: 4615075931536657819, guid: fab0999261a442b28bbbb04020281a7c, type: 3}
