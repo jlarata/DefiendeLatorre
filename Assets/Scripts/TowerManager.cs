@@ -5,6 +5,7 @@ using UnityEngine;
 public class TowerManager : MonoBehaviour
 {
     public GameObject[] towersList;
+    public int towersCreated;
 
     [SerializeField]
     float spawnPosX;
@@ -21,7 +22,7 @@ public class TowerManager : MonoBehaviour
         spawnPosX = 3.8F;
         spawnPosY = 1f;
         spawnPosZ = 1.13F;
-
+        towersCreated = 0;
         
 
     }
@@ -33,6 +34,65 @@ public class TowerManager : MonoBehaviour
     }
 
     
+    public void SpawnNextTower()
+    {
+        if (towersCreated == 0)
+        {
+            SpawnTowerA();
+            towersCreated ++;
+        } else
+        if (towersCreated == 1)
+        {
+            SpawnTowerB();
+            towersCreated ++;
+        } else
+        if (towersCreated == 2)
+        {
+            SpawnTowerC();
+            towersCreated ++;
+        } else
+        if (towersCreated == 3)
+        {
+            SpawnTowerD();
+            towersCreated ++;
+        } else
+        if (towersCreated == 4)
+        {
+            SpawnTowerE();
+            towersCreated ++;
+        } else
+        if (towersCreated == 5)
+        {
+            SpawnTowerF();
+            towersCreated ++;
+        } else
+        if (towersCreated == 6)
+        {
+            SpawnTowerG();
+            towersCreated ++;
+        } else
+        if (towersCreated == 7)
+        {
+            SpawnTowerH();
+            towersCreated ++;
+        } else
+        if (towersCreated == 8)
+        {
+            SpawnTowerI();
+            towersCreated ++;
+        } else
+        if (towersCreated == 9)
+        {
+            SpawnTowerJ();
+            towersCreated ++;
+        } else
+        if (towersCreated == 10)
+        {
+            SpawnTowerK();
+            towersCreated ++;
+        }
+    }
+
     public void SpawnAllTowers()
     {
         if (!torresCreadasCortala)

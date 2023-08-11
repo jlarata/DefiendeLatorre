@@ -7,19 +7,22 @@ public class ProjectilController : MonoBehaviour
     public float xRandomDirection;
     public float zRandomDirection;
     public Vector3 randomDirection;
+
+    public float xBoundary;
+    public float zBoundaryBot;
+    public float zBoundaryTop;
+
         void Start()
     {
         xRandomDirection = Random.Range(-1f, 1f);
         zRandomDirection = Random.Range(-1f, 1f);
         randomDirection.x = xRandomDirection;
         randomDirection.z = zRandomDirection;
-        
+        xBoundary = 17.0f;
+        zBoundaryTop = 7.0f;
+        zBoundaryBot = 3.07f;
     }
-    
-    // TENGO QUE HACER UN METODO DE AUTODESTROY SI SE SALE DE LOS BONDS!!!
-
-    // Update is called once per frame
-    void Update()
+      void Update()
     {
         WeaponBehaviour();
     }
@@ -28,15 +31,15 @@ public class ProjectilController : MonoBehaviour
     {
         transform.Translate(randomDirection * Time.deltaTime * 6, Space.World);
 
-        /*if (transform.position.x > xRange || transform.position.x < -xRange)
+        if (transform.position.x > xBoundary || transform.position.x < -xBoundary)
         {
-            setNewDirection();
+            Destroy(gameObject);
         }
 
-        if (transform.position.y < -yRange || transform.position.y > yRange)
+        if (transform.position.z < -zBoundaryBot || transform.position.z > zBoundaryTop)
         {
-            setNewDirection();
-        }*/
+            Destroy(gameObject);
+        }
         
 
     }

@@ -412,6 +412,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towersList:
   - {fileID: 4558299632939230933, guid: 9fea7c755bb00fa6ab27529d12ab38cc, type: 3}
+  towersCreated: 0
   spawnPosX: 0
   spawnPosY: 0
   spawnPosZ: 0
@@ -721,7 +722,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 247252241}
         m_TargetAssemblyTypeName: TowerManager, Assembly-CSharp
-        m_MethodName: SpawnAllTowers
+        m_MethodName: SpawnNextTower
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
