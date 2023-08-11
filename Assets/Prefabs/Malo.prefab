@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: -4}
-  m_LocalScale: {x: 1, y: 0.2, z: 1}
+  m_LocalScale: {x: 0.6, y: 0.2, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -120,3 +120,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b40151cf94ad1940a4e8d9782be20fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  istramo1: 0
+  istramo2: 0
+  istramo3: 0
+  istramo4: 0
+  istramo5: 0
+  istramo6: 0
+  istramo7: 0
+  istramo8: 0
+  istramo9: 0
+  istramo10: 0
+  istramo11: 0
+  istramo12: 0
