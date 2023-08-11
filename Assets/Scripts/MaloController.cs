@@ -81,51 +81,51 @@ public class MaloController : MonoBehaviour
     {
         if (currentTramo == 1)
         {
-            transform.position = Vector3.MoveTowards(transform.position, posta01.transform.position, Time.deltaTime*4);
+            transform.position = Vector3.MoveTowards(transform.position, posta01.transform.position, Time.deltaTime*2);
         }
         if (currentTramo == 2)
         {
-            transform.position = Vector3.MoveTowards(transform.position, posta02.transform.position, Time.deltaTime*4);
+            transform.position = Vector3.MoveTowards(transform.position, posta02.transform.position, Time.deltaTime*2);
         }
         if (currentTramo == 3)
         {
-            transform.position = Vector3.MoveTowards(transform.position, posta03.transform.position, Time.deltaTime*4);
+            transform.position = Vector3.MoveTowards(transform.position, posta03.transform.position, Time.deltaTime*2);
         }
         if (currentTramo == 4)
         {
-            transform.position = Vector3.MoveTowards(transform.position, posta04.transform.position, Time.deltaTime*4);
+            transform.position = Vector3.MoveTowards(transform.position, posta04.transform.position, Time.deltaTime*2);
         }
         if (currentTramo == 5)
         {
-            transform.position = Vector3.MoveTowards(transform.position, posta05.transform.position, Time.deltaTime*4);
+            transform.position = Vector3.MoveTowards(transform.position, posta05.transform.position, Time.deltaTime*2);
         }
         if (currentTramo == 6)
         {
-            transform.position = Vector3.MoveTowards(transform.position, posta06.transform.position, Time.deltaTime*4);
+            transform.position = Vector3.MoveTowards(transform.position, posta06.transform.position, Time.deltaTime*2);
         }
         if (currentTramo == 7)
         {
-            transform.position = Vector3.MoveTowards(transform.position, posta07.transform.position, Time.deltaTime*4);
+            transform.position = Vector3.MoveTowards(transform.position, posta07.transform.position, Time.deltaTime*2);
         }
         if (currentTramo == 8)
         {
-            transform.position = Vector3.MoveTowards(transform.position, posta08.transform.position, Time.deltaTime*4);
+            transform.position = Vector3.MoveTowards(transform.position, posta08.transform.position, Time.deltaTime*2);
         }
         if (currentTramo == 9)
         {
-            transform.position = Vector3.MoveTowards(transform.position, posta09.transform.position, Time.deltaTime*4);
+            transform.position = Vector3.MoveTowards(transform.position, posta09.transform.position, Time.deltaTime*2);
         }
         if (currentTramo == 10)
         {
-            transform.position = Vector3.MoveTowards(transform.position, posta10.transform.position, Time.deltaTime*4);
+            transform.position = Vector3.MoveTowards(transform.position, posta10.transform.position, Time.deltaTime*2);
         }
         if (currentTramo == 11)
         {
-            transform.position = Vector3.MoveTowards(transform.position, posta11.transform.position, Time.deltaTime*4);
+            transform.position = Vector3.MoveTowards(transform.position, posta11.transform.position, Time.deltaTime*2);
         }
         if (currentTramo == 12)
         {
-            transform.position = Vector3.MoveTowards(transform.position, posta12.transform.position, Time.deltaTime*4);
+            transform.position = Vector3.MoveTowards(transform.position, posta12.transform.position, Time.deltaTime*2);
         }
     }
 
