@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2115670886196123732}
   - component: {fileID: 1927305726022807127}
   - component: {fileID: -3208129468869822222}
+  - component: {fileID: 4918684663481535980}
   m_Layer: 0
   m_Name: GMort
   m_TagString: Untagged
@@ -28,13 +29,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4558299632939230933}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: -0, y: -0.5696254, z: -0, w: 0.8219045}
   m_LocalPosition: {x: 3.8, y: 1, z: 1.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 290.552, z: 0}
 --- !u!33 &2526831498537162021
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -122,3 +123,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilesList:
   - {fileID: 4615075931536657819, guid: fab0999261a442b28bbbb04020281a7c, type: 3}
+  targets: []
+  myTarget: {fileID: 0}
+  maxDistance: 100
+  targetDistance: 0
+  AimConstraintComponent: {fileID: 0}
+--- !u!895512359 &4918684663481535980
+AimConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4558299632939230933}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Weight: 0.724
+  m_RotationAtRest: {x: -0, y: -69.44822, z: 0}
+  m_RotationOffset: {x: 0, y: 0, z: 0}
+  m_AimVector: {x: 0, y: 0, z: 1}
+  m_UpVector: {x: 0, y: 1, z: 0}
+  m_WorldUpVector: {x: 0, y: 1, z: 0}
+  m_WorldUpObject: {fileID: 0}
+  m_UpType: 0
+  m_AffectRotationX: 0
+  m_AffectRotationY: 1
+  m_AffectRotationZ: 0
+  m_Active: 1
+  m_IsLocked: 0
+  m_Sources:
+  - sourceTransform: {fileID: 0}
+    weight: 2

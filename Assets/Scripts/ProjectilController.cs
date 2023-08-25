@@ -12,6 +12,7 @@ public class ProjectilController : MonoBehaviour
     public float zBoundaryBot;
     public float zBoundaryTop;
 
+
         void Start()
     {
         xRandomDirection = Random.Range(-1f, 1f);
@@ -29,7 +30,9 @@ public class ProjectilController : MonoBehaviour
 
     public void WeaponBehaviour()
     {
-        transform.Translate(randomDirection * Time.deltaTime * 6, Space.World);
+        //transform.Translate(randomDirection * Time.deltaTime * 6, Space.World);
+
+        transform.Translate(Vector3.forward * Time.deltaTime * 6, Space.Self);
 
         if (transform.position.x > xBoundary || transform.position.x < -xBoundary)
         {
@@ -49,9 +52,11 @@ public class ProjectilController : MonoBehaviour
 
         if (other.gameObject.tag == "Malos")
         {
-
+        
+        other.gameObject.SetActive(false);
         other.GetComponent<MaloController>().Impact();
-        Destroy(gameObject);
+        
+        //Destroy(gameObject);
         }
         
     }

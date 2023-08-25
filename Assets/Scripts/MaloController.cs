@@ -71,7 +71,8 @@ public class MaloController : MonoBehaviour
         if (transform.position == posta12.transform.position)
         {
             currentTramo += 1;
-            Impact();
+            gameObject.SetActive(false);
+            //Impact();
         }
     }
 
@@ -131,6 +132,7 @@ public class MaloController : MonoBehaviour
 
     public void Impact()
     {
-        Destroy(gameObject);
+        gameObject.SetActive(false);
+        //Destroy(gameObject);
     }
 }
