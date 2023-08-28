@@ -31,9 +31,9 @@ public class TowerController : MonoBehaviour
     IEnumerator Fire()
     {
             
-            yield return new WaitForSeconds(.5f);
+            yield return new WaitForSeconds(1.5f);
             SetTarget();
-            yield return new WaitForSeconds(.5f);
+            yield return new WaitForSeconds(1.5f);
             SpawnProjectile();
 
         StartCoroutine(Fire());
